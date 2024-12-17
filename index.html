@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Coin Wallet Scanner</title> 
+  <link rel="stylesheet" href="styles.css"> 
+ </head> 
+ <body> <!-- Üst Alan --> 
+  <div class="header"> <button id="startStopButton">START</button> 
+   <div id="timer">
+     00:00:00:00 
+   </div> <button id="emptyButton">⏩</button> 
+  </div> <!-- Coin Seçme Bölümü --> 
+  <div class="coin-selector" id="coinSelector"> <button id="openCoinSelector">Select a Coin ▼</button> 
+   <div id="coinMenu" class="coin-menu"> <label><input type="checkbox" value="BTC"><img src="btc.png" alt="BTC"> BTC -disable in deno</label> <label><input type="checkbox" value="ETH"><img src="eth.png" alt="ETH"> ETH-disable in deno</label> <label><input type="checkbox" value="TRX"><img src="trx.png" alt="TRX"> TRX -disable in deno</label> <label><input type="checkbox" value="SOL"><img src="sol.png" alt="sol"> SOL-disable in deno</label> <label><input type="checkbox" value="DOGE"><img src="doge.png" alt="DOGE"> DOGE-disable in deno</label> <label><input type="checkbox" value="BNB"><img src="bnb.png" alt="BNB"> BNB-disable in deno</label> <button id="confirmCoin">OK</button> 
+   </div> 
+  </div> <!-- Wallet Alanı --> 
+  <div class="wallet-area"> 
+   <h3>Checked <span id="checkedCount">0</span></h3> 
+   <div id="wallets"> <!-- Akacak cüzdan adresleri buraya eklenecek --> 
+   </div> 
+  </div> <!-- Bakiyeli Cüzdan Alanı --> 
+  <div class="wallet-found"> 
+   <h3>Found <span id="foundCount">0</span></h3> 
+   <div id="foundWallets"> <!-- Bakiyeli cüzdan buraya yazılacak --> 
+   </div> 
+  </div> <!-- Alt Menü --> 
+  <div class="menu"> <button class="menu-button" onclick="location.href='dashboard.html'"> <img src="https://i.imgur.com/haEoeUK.jpeg" alt="Dashboard Logo"> Dashboard </button> <button class="menu-button" onclick="location.href='search.html'"> <img src="https://i.imgur.com/gcLOhbJ.jpeg" alt="Search Logo"> Search </button> <button class="menu-button" onclick="location.href='transactions.html'"> <img src="https://i.imgur.com/d3MTSIn.jpeg" alt="Transactions Logo"> Transactions </button> 
+  </div> 
+  <script src="script.js"></script> 
+ </body>
+</html>

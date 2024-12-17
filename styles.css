@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">');
+
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000;
+    color: #0f0;
+    text-align: center;
+}
+
+/* Üst Alan */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #003;
+    color: #0af;
+    border-bottom: px solid #444;
+}
+
+button {
+    background-color: #111;
+    color: #0af;
+    border: 1px solid #0af;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #222;
+}
+
+#timer {
+    font-size: 1.5rem;
+}
+
+/* Coin Seçme Menü */
+.coin-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #001;
+    padding: 1px;
+    border: 1px solid #0f0;
+}
+
+.coin-menu label {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    color: #0af;
+}
+
+.coin-menu img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#openCoinSelector {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Wallet Alanı */
+.wallet-area, .wallet-found {
+    margin: 20px auto;
+    background-color: #002;
+    padding: 15px;
+    color: #0af;
+    height: 220px;
+    overflow: auto;
+    border: 1px solid #0af;
+    width: 90%;
+    box-shadow: 0px 0px 8px #0af;
+    text-align: left;
+}
+
+h3 {
+    margin: 0.01px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.wallet-area div, .wallet-found div {
+    margin: 1px 0;
+    font-size: 1rem;
+}
+
+/* Alt Menü */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Butonlar arası boşluk */
+    padding: 10px;
+    background-color: #003; /* Menü arka plan rengi */
+}
+
+.menu-button {
+    display: flex;
+    flex-direction: column; /* Logoyu yazının üstüne yerleştirir */
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #001; /* Buton arka plan rengi */
+    color: 003;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.menu-button img {
+    width: 24px; /* Logo genişliği */
+    height: 24px; /* Logo yüksekliği */
+    margin-bottom: 5px; /* Logo ile yazı arası boşluk */
+}
+
+.menu-button:hover {
+    background-color: #003; /* Hover durumunda buton rengi */
+
+}
